@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Connection {
+  id        String   @id @default(uuid())
+  name      String   // Friendly name for the connection
+  host      String
+  port      Int      @default(21)
+  username  String
+  password  String   // Encrypted password
+  protocol  String   // 'ftp' | 'sftp' | 'ftps'
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("connections")
+}
